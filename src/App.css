@@ -2,7 +2,17 @@
   text-align: center;
 }
 
-.App-logo {
+.App-box {
+  height: 100px;
+  width: 100px;
+  border: 1px solid grey;
+}
+
+.App-black {
+  background-color: black;
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +45,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
