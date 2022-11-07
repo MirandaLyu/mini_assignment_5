@@ -1,6 +1,13 @@
-.box {
+.white {
     height: 100px;
     width: 100px;
     border: 1px solid grey;
     background-color: white;
+}
+
+.black {
+    height: 100px;
+    width: 100px;
+    border: 1px solid grey;
+    background-color: black;
 }

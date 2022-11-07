@@ -1,22 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Child.css'
 
-function Child() {
-
-    const [boxColor, setBoxColor] = useState("white");
-    const b = document.getElementById("box");
-    console.log(b.style.backgroundColor);
-    function colorChange() {
-        if (b.style.backgroundColor === boxColor) {
-            setBoxColor("Black");
-        }
-        else {
-            setBoxColor("White");
-        }
-    }
-    // b.addEventListener("click", colorChange);
-    return (<div id='box'>
-    </div> )
+function Child(props) {
+    const className = props.color;
+    const onClickFunc = props.onClickFunc
+    // return for each box
+    return (
+    <div className={className} onClick={onClickFunc}> </div> )
 }
 
 export default Child;
